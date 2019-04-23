@@ -1,0 +1,11 @@
+version: '2'
+services:
+    be4techapp-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/be4techApp/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=be4techApp
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
